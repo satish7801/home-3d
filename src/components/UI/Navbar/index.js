@@ -4,10 +4,8 @@ import {
   NavbarIcon,
   NavbarContent,
   AccordionWrapper,
-  LanguageButton,
   Contacts,
 } from "./style";
-import Map from "../Map";
 import { withTheme } from "styled-components";
 import {
   Accordion,
@@ -107,7 +105,6 @@ const Navbar = ({ active, theme }) => {
               o.material.lightMap = lightMaps.nonEmpty[1];
             }
           }
-
           setToggleFurniture(!toggleFurniture);
         }
       });
@@ -136,27 +133,6 @@ const Navbar = ({ active, theme }) => {
           />
         </div>
         <div className='title'>{t("subtitle")}</div>
-        <div
-          style={{
-            padding: "12px 24px",
-            display: "flex",
-            justifyContent: "space-around",
-          }}
-        >
-          <LanguageButton
-            onClick={() => changeLanguage("en")}
-            active={!isRussian}
-          >
-            o'zbekcha
-          </LanguageButton>
-          <LanguageButton
-            onClick={() => changeLanguage("en")}
-            active={isRussian}
-          >
-            русский
-          </LanguageButton>
-        </div>
-        <Map />
         <HomeInfo />
 
         <div

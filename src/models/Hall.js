@@ -104,7 +104,6 @@ export default function Model() {
 
         gltf.scene.traverse((o) => {
           if (o.isMesh) {
-            console.log(o.name);
             // o.material.envMap = envMap;
             o.material.envMapIntensity = 0.2;
             o.material.lightMapIntensity = 2;

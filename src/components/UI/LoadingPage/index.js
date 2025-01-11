@@ -74,9 +74,7 @@ export default () => {
         </div>
         <div className='copyright'>
           <p className='text'>powered by</p>
-          <a href='https://raisense.uz'>
-            <img src='/assets/images/raisense_white.png' alt='' />
-          </a>
+            <img className='logo-image' src='/assets/images/SN-Logo.png' alt='Satish Neha' />
         </div>
       </LoadingContent>
       <div className='bg-image' ref={bgImageRef}>
