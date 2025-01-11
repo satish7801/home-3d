@@ -144,13 +144,13 @@ const Navbar = ({ active, theme }) => {
           }}
         >
           <LanguageButton
-            onClick={() => changeLanguage("uz")}
+            onClick={() => changeLanguage("en")}
             active={!isRussian}
           >
             o'zbekcha
           </LanguageButton>
           <LanguageButton
-            onClick={() => changeLanguage("ru")}
+            onClick={() => changeLanguage("en")}
             active={isRussian}
           >
             русский
