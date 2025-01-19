@@ -7,7 +7,6 @@ import FloorCircle from "../components/FloorCircle";
 import Instructions from "../components/UI/Instructions";
 import LoadingManager from "../components/LoadingManager";
 import { withResizeDetector } from "react-resize-detector";
-import Tour from "reactour";
 
 const Controls = React.lazy(() => import("../components/Controls"));
 const Model = React.lazy(() => import("../models/Hall"));
@@ -19,16 +18,8 @@ const config = {
   camera: {},
 };
 
-const steps = [
-  {
-    selector: ".first-step",
-    content: "This is the first step",
-  },
-];
-
 const Hall = ({ width }) => {
   const [fov, setFov] = useState(55);
-  const [isTourOpen, setIsTourOpen] = useState(true);
 
   // {!process.env.NODE_ENV || process.env.NODE_ENV === "development" ? (
   //   <>
@@ -64,18 +55,13 @@ const Hall = ({ width }) => {
         style={{ display: "none" }}
       >
         <source
-          src='/assets/video/promo_compressed.mp4'
+          src='/assets/video/Couple_Video.mp4'
           type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
         />
       </video>
       <Instructions />
       <LoadingPage />
       <Navbar active='room-1' />
-      {/* <Tour
-        steps={steps}
-        isOpen={isTourOpen}
-        onRequestClose={() => setIsTourOpen(false)}
-      /> */}
     </>
   );
 };

@@ -14,6 +14,7 @@ import {
 import { ThemeProvider } from "styled-components";
 import theme from "./utils/theme";
 import Logo from "./components/UI/Logo";
+import Sponza from "./pages/sponza";
 
 const Room1 = React.lazy(() => import("./pages/room1"));
 const Hall = React.lazy(() => import("./pages/hall"));
@@ -36,6 +37,7 @@ function App() {
         <Switch>
           <Suspense fallback={null}>
             <Route path='/room-1' render={(props) => <Room1 {...props} />} />
+            <Route path='/room-2' render={(props) => <Sponza {...props} />} />
             <Route path='/hall' render={(props) => <Hall {...props} />} />
             <Route exact path='/'>
               <Redirect to='/hall' />

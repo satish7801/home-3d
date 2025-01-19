@@ -127,6 +127,12 @@ p {
   animation-direction: alternate;
 }
 
+.logo-image
+{
+  width: 200px;
+  margin-inline: auto;
+}
+
 @keyframes move {
   0% {
     transform: translateX(0);

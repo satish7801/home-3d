@@ -14,7 +14,7 @@ i18n
   .init({
     // we init with resources
     resources,
-    fallbackLng: "ru",
+    fallbackLng: "en",
     debug: true,
     detection: options,
 
